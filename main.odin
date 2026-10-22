@@ -8,8 +8,11 @@ import "core:log"
 import "ticket"
 import "core:path/filepath"
 
+
+
 main :: proc() {
     context.logger = log.create_console_logger()
+    
     joined, join_err := filepath.join([]string{"/home", "jordan", "kbts", "riser","test.json"})
     if join_err != nil {
         log.fatal(join_err)
@@ -28,7 +31,6 @@ main :: proc() {
         log.fatal(unmarsh_err)
         os.exit(1)
     }
-    // fmt.println(new_ticket) 
-    ticket.display(new_ticket)
+
 }
 

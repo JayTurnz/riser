@@ -1,2 +1,9 @@
+# Executables
 /foo
 /main
+
+# json
+test.json
+
+# tickets dir
+/tickets
